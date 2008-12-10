@@ -1,0 +1,8 @@
+category: Gnome
+requires: cygwin glib2 gdk-pixbuf2 gtk2-x11 libcairo2 libintl8 libxml2 pango
+sdesc: "GTK+ syntax highlighting widget (2.0 runtime)"
+ldesc: "GtkSourceView is a text widget that extends the standard gtk+ 
+2.x text widget GtkTextView.
+
+It improves GtkTextView by implementing syntax highlighting and other
+features typical of a source code editor."
