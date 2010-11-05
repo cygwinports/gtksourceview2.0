@@ -1,7 +1,7 @@
 category: Gnome
-requires: libcairo2 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libxml2
+requires: libgtksourceview2.0_0
 external-source: gtksourceview2.0
-sdesc: "GTK+ syntax highlighting widget (2.0 runtime)"
+sdesc: "GTK+ syntax highlighting widget (2.0 Glade3 plugin)"
 ldesc: "GtkSourceView is a text widget that extends the standard gtk+ 
 2.x text widget GtkTextView.
 

@@ -1,0 +1,11 @@
+ORIG_PN="gtksourceview"
+inherit gnome2
+
+DESCRIPTION="GTK+ syntax highlighting widget (GNOME 2.20 branch)"
+
+PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel glade3-gtksourceview"
+glade3_gtksourceview_CONTENTS="usr/share/glade3/"
+libgtksourceview2_0_0_CONTENTS="--exclude=glade3 --exclude=gtk-doc usr/bin/*-2.0-0.dll usr/share/"
+libgtksourceview2_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
+
+CYGCONF_ARGS="--enable-glade-catalog"
