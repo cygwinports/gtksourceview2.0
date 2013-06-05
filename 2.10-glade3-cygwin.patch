@@ -1,0 +1,10 @@
+--- origsrc/gtksourceview-2.10.5/glade/gtksourceview-glade.xml	2010-08-22 06:45:04.000000000 -0500
++++ src/gtksourceview-2.10.5/glade/gtksourceview-glade.xml	2013-06-04 20:52:52.679187300 -0500
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<glade-catalog name="gtksourceview" library="gtksourceview-2.0" depends="gtk+">
++<glade-catalog name="gtksourceview" library="gtksourceview-2.0-0" depends="gtk+">
+   <glade-widget-classes>
+     <glade-widget-class name="GtkSourceView" title="GtkSourceView" generic-name="gtksourceview">
+       <properties>

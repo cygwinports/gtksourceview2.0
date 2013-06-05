@@ -1,0 +1,21 @@
+ORIG_PN="gtksourceview"
+inherit gnome2
+
+NAME="gtksourceview2.0"
+VERSION=2.10.5
+RELEASE=2
+CATEGORY="GNOME"
+SUMMARY="GTK+ syntax highlighting widget (2.0 branch)"
+DESCRIPTION="GtkSourceView is a text widget that extends the standard GTK+ 2.x
+text widget GtkTextView.  It improves GtkTextView by implementing syntax
+highlighting and other features typical of a source code editor."
+
+PATCH_URI="2.10-glade3-cygwin.patch"
+
+PKG_NAMES="lib${NAME}_0 lib${NAME}-devel glade3-gtksourceview"
+glade3_gtksourceview_REQUIRES="lib${NAME}_0"
+glade3_gtksourceview_CONTENTS="usr/share/glade3/"
+libgtksourceview2_0_0_CONTENTS="--exclude=glade3 --exclude=gtk-doc usr/bin/*-2.0-0.dll usr/share/"
+libgtksourceview2_0_devel_CONTENTS="usr/include/ usr/lib/ usr/share/gtk-doc/"
+
+CYGCONF_ARGS="--enable-glade-catalog"
